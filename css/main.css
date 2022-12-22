@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto';
+    white-space: nowrap;
+    position: relative;
+    
+    /* overflow: hidden; */
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* HEADER START */
+header {
+    background-color: black;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    color: white;
+    /* position: relative; */
+    /* line-height: 28px; */
+    display: flex;
+    justify-content: space-between;
+    max-height: 60px;
+}
+
+.website-name {
+    padding: 16px 0px 16px 28px;
+    font-size: 24px;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 21px 28px 20px 0px;
+    margin: 0;
+}
+
+header li{
+    padding-right: 31px;
+}
+
+@media (max-width:680px) {
+    header nav {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
+}
+/* @media (max-width:) {
+    
+} */
+/* HEADER END */
+
+
+/* HERO SECTION BEGINS */
+
+.hero-image {
+    position: relative;
+    text-align: center;
+    color: white;
+    /* display: flex;
+    align-items: center; */
+}
+
+.hero-image h1{
+    font-size: 7vw;
+    color: white;
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-image img{
+    width: 100%;
+}
+
+/* HERO SECTION ENDS */
+
+/* MAIN SECTION BEGINS */
+
+button {
+    margin: 82px 0px 82px 0px;
+    padding: 22px 0px 22px 26px;
+    width: 100%;
+    font-size: 24px;
+    background-color: #D9D9D9;
+    border: 2px solid #A6A6A6; 
+    text-align: left;   
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+}
+
+.featured-shows {
+    max-width: 1259px;
+    width: 100%;
+}
+
+.single-show {
+    padding: 0px 0px 52px 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.single-show:last-of-type {
+    padding-bottom: 80px;
+}
+
+.single-show-info {
+    padding: 0px 0px 65px 0px;
+}
+
+.single-show h2 {
+    font-size: 36px;
+    padding-left: 53px;
+    margin: 0px;
+}
+
+.single-show ul {
+    padding: 20px 0px 0px 52px;
+    margin: 0px;
+}
+
+.single-show li {
+    padding-bottom: 24px;
+}
+
+.read-more {
+    background-color: #F0BB00;
+    padding: 19px 47px 18px 47px;
+    border: 1px solid #A07D00;
+    /* display: flex;
+    justify-content: flex-end; */
+}
+
+.read-more-button {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+@media (max-width:940px) {
+    .single-show {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .read-more-button {
+        justify-content: center;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width:656px) {
+    .read-more-button {
+        padding: 0;
+    }
+
+    .single-show h2 {
+        /* padding: 0; */
+        /* font-size: 30px; */
+    }
+}
+
+@media (max-width:528px) {
+    .single-show h2 {
+        font-size: 25px;
+    }
+
+    .single-show li {
+        flex-wrap: wrap;
+    }
+}
+
+/* MAIN SECTION ENDS */
+
+/* FOOTER STARTS */
+
+footer {
+    background-color: black;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 78px 0px 78px 0px;
+
+}
+
+footer nav{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 1259px;
+    width: 100%;
+}
+
+footer h2 {
+    font-size: 36px;
+    margin: 0;
+    padding-left:56px;
+}
+
+footer li{
+    font-size: 20px;
+    padding-top: 22px;
+    padding-left:14px;
+    margin: 0;
+    /* max-width: 212px; */
+}
+
+footer li a{
+    max-width: 212px;
+    line-height: 23px;
+    width: 20%;
+    display: inline-block;
+    flex-wrap: wrap;
+}
+
+footer ul {
+    padding-top: 10px;
+}
+
+@media (max-width:1036px) {
+    footer nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* align-items: center; */
+    }
+
+    .footer-navs,
+    footer nav img {
+    padding-top: 30px;
+    margin: 0 auto;
+    }
+}
+
+@media (max-width:656px) {
+    footer nav {
+        display: grid;
+        grid-template-columns: 4fr;
+        
+    }
+}
